@@ -21,7 +21,7 @@ const Header = () => {
             </h1>
             <div className="mt-10 bg-gradient-to-r from-secondary to-primary py-px w-fit">
               <div className="bg-black py-2">
-                <p className="gradient-text text-[22px] font-bold font-satoshi leading-[130%]">
+                <p className="gradient-caption">
                   Hold the Creon Pass NFT and earn passive income from AI Tools
                 </p>
               </div>
