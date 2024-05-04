@@ -3,18 +3,18 @@ import Navbar from "../atoms/navbar";
 
 const Header = () => {
   return (
-    <section className="relative">
+    <section className="relative overflow-hidden">
       <div className="absolute -z-50">
         <div className="video-overlay w-full h-full top-0"></div>
-        <video loop autoPlay muted>
+        <video loop autoPlay muted className="h-screen object-cover">
           <source src="./main-background-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
       <div>
         <Navbar />
-        <div className="container mx-auto grid grid-rows-2">
-          <div className="row-start-2 my-[50px]">
+        <div className="container mx-auto grid grid-rows-2 -z-20">
+          <div className="row-start-2 my-[50px] mx-2">
             <h1 className="title text-balance">
               The world&apos;s first platform for Tokenizing AI blockchain
               projects

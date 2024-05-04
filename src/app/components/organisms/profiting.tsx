@@ -9,7 +9,7 @@ const Profiting = () => {
           Ai innovation & decentralization
         </h3>
       </div>
-      <div className="grid grid-cols-3 items-center gap-10 mt-[80px]">
+      <div className="grid grid-rows-2 grid-cols-1 items-center gap-5 md:gap-10 mt-0 md:mt-[80px] md:grid-cols-3 md:grid-rows-1">
         <div className="col-span-2">
           <div className="relative">
             <div className="video-overlay w-full h-full"></div>

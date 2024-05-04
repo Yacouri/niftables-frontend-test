@@ -37,7 +37,7 @@ const AiInfos = () => {
       </div>
       <div>
         <div className="container mx-auto">
-          <div className="flex flex-col justify-center items-center gap-[20px]">
+          <div className="relative flex md:flex-col w-full overflow-x-scroll md:overflow-hidden gap-3 md:gap-10 pt-10">
             {infos.map((info, key) => (
               <AiInfoCard info={info} key={key} />
             ))}

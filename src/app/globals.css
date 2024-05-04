@@ -12,6 +12,29 @@ body {
   background-color: var(--background);
 }
 
+@layer base {
+  html {
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: #000;
+      
+    }
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      background-color: #000;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+      background-color: #AB23FF;
+    }
+  }
+  .container {
+    @apply px-3 md:px-[100px];
+  }
+}
+
 @layer components {
   .video-overlay {
     position: absolute;
@@ -21,19 +44,26 @@ body {
   }
 
   .title {
-    @apply text-[68px] leading-[110%] uppercase;
+    @apply text-3xl md:text-[68px] leading-[110%] uppercase;
   }
 
   .gradient-caption {
-    @apply text-[22px] font-bold font-satoshi leading-[130%];
+    @apply text-lg md:text-[22px] font-bold font-satoshi leading-[130%];
     background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
+  .gradient-bg {
+    background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .gradient-title {
-    @apply text-[38px] font-bold leading-[120%];
+    @apply text-xl md:text-[38px] font-bold leading-[120%];
     background: linear-gradient(90deg, #3D8BFF 0%, #AB23FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -68,6 +98,21 @@ body {
 
   .icon-wrapper {
     @apply flex justify-center items-center w-[34px] h-[34px] border-2 border-white rounded-full;
+  }
+
+  .scrollable-wrapper {
+    @apply relative flex w-full overflow-x-scroll md:overflow-hidden gap-3 md:gap-10 pt-10;
+
+    &>div {
+      @apply min-w-[80%] md:min-w-[33%];
+    }
+  }
+
+  .feature-card {
+    &::before {
+      @apply absolute rounded-full bg-white right-7 top-0 font-satoshi px-2 text-black -translate-y-1/2 text-sm font-bold;
+      content: "COMING SOON";
+    }
   }
 }
 

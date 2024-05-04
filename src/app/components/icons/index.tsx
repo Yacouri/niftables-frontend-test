@@ -3,6 +3,7 @@
 export const StatsUpIcon = () => {
   return (
     <svg
+      className="w-[40px] h-[40px] md:w-[60px] md:h-[60px]"
       width="68"
       height="76"
       viewBox="0 0 68 76"
@@ -28,6 +29,7 @@ export const StatsUpIcon = () => {
 export const CirclesIcon = () => {
   return (
     <svg
+      className="w-[40px] h-[40px] md:w-[60px] md:h-[60px]"
       width="68"
       height="76"
       viewBox="0 0 68 76"
@@ -84,6 +86,7 @@ export const CirclesIcon = () => {
 export const RocketIcon = () => {
   return (
     <svg
+      className="w-[40px] h-[40px] md:w-[60px] md:h-[60px]"
       width="68"
       height="76"
       viewBox="0 0 68 76"
@@ -114,6 +117,7 @@ export const RocketIcon = () => {
 export const InfinityIcon = () => {
   return (
     <svg
+      className="w-[40px] h-[40px] md:w-[60px] md:h-[60px]"
       width="68"
       height="76"
       viewBox="0 0 68 76"

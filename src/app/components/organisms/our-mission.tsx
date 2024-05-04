@@ -37,27 +37,27 @@ const OurMission = () => {
 
   return (
     <section className="container mx-auto">
-      <div className="relative grid grid-cols-2 gap-[100px]">
-        <h3 className="text-[38px] leading-[120%] text-balance uppercase">
-          Our vision is to support the innovation of AI blockchain projects
-          <span className="ml-4 gradient-title">
-            while prioritizing communities and democratizing profits
-          </span>
+      <div className="relative flex flex-col md:flex-row gap-[100px] overflow-hidden">
+        <div className="basis-1/2">
+          <h3 className="text-[22px] md:text-[38px] leading-[120%] text-balance uppercase">
+            Our vision is to support the innovation of AI blockchain projects
+            <span className="ml-4 gradient-bg">
+              while prioritizing communities and democratizing profits
+            </span>
+          </h3>
           <Image
             src={CreonImage}
             alt="Creon"
-            className="absolute right-1/2 -z-50 w-[700px]"
+            className="absolute left-[100px] bottom-auto md:bottom-0 -z-50 md:w-[700px]"
           />
-        </h3>
-        <div>
-          <div>
-            {missions.map((mission, key) => (
-              <>
-                <MissionAccordion mission={mission} key={key} />
-                <hr className="border-t border-grey-line my-[20px]" />
-              </>
-            ))}
-          </div>
+        </div>
+        <div className="basis-1/2 mt-20 md:mt-0">
+          {missions.map((mission, key) => (
+            <>
+              <MissionAccordion mission={mission} key={key} />
+              <hr className="border-t border-grey-line my-4 md:my-[20px]" />
+            </>
+          ))}
         </div>
       </div>
     </section>
