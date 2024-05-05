@@ -33,9 +33,7 @@ const ComingSoon = () => {
     <section className="container mx-auto md:my-[150px] my-[80px]">
       <div className="scrollable-wrapper">
         {features.map((feature, key) => (
-          <div className="relative" key={key}>
             <FeatureCard feature={feature} key={key} />
-          </div>
           // <div className="w-fit relative p-10 bg-red-500 pt-10">
           //   <div className="absolute bg-yellow-500 p-2 -top-2 -right-2"></div>
           // </div>

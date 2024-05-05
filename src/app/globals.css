@@ -17,7 +17,7 @@ body {
     &::-webkit-scrollbar-track {
       -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
       background-color: #000;
-      
+
     }
 
     &::-webkit-scrollbar {
@@ -30,6 +30,7 @@ body {
       background-color: #AB23FF;
     }
   }
+
   .container {
     @apply px-3 md:px-[100px];
   }
@@ -104,7 +105,7 @@ body {
     @apply relative flex w-full overflow-x-scroll md:overflow-hidden gap-3 md:gap-10 pt-10;
 
     &>div {
-      @apply min-w-[80%] md:min-w-[33%];
+      @apply w-[33%] min-w-[80%] md:min-w-[30%] max-w-fit;
     }
   }
 

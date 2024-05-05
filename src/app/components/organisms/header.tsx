@@ -6,7 +6,7 @@ const Header = () => {
     <section className="relative overflow-hidden">
       <div className="absolute -z-50">
         <div className="video-overlay w-full h-full top-0"></div>
-        <video loop autoPlay muted className="h-screen object-cover">
+        <video loop autoPlay muted className="w-[100vw] h-screen object-cover">
           <source src="./main-background-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>

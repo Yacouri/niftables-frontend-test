@@ -24,7 +24,7 @@ const Profiting = () => {
             <h4 className="font-satoshi text-balance text-[22px] leading-[130%] font-bold">
               The dynamic community driven business model of the future.
             </h4>
-            <p className="font-satoshi leading-[130%] text-lg ">
+            <p className="font-satoshi leading-[130%] text-lg">
               At Creon, we blend the power of AI tools with the dynamic crypto
               and NFT markets, utilizing an innovative business model to drive
               profitability. This approach empowers our community, as our NFT
